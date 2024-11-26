@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quicklist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header id="logo-desktop">
+    <img src="assets/logo.svg" alt="">
+    <p>quicklist</p>
+  </header>
+
+  <main>
+    <div id="top">
+      <p><- Voltar</p>
+      <h1>Compras da semana</h1>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Adicione um novo item" id="add-item">
+      <button type="submit" class="button" id="btn">Adicionar item</button>
+
+      <ul>
+        <li id="item">
+          <input type="checkbox" id="name-item">
+          <label for="name-item">Pão de forma</label>
+          <button>
+            <img src="assets/Frame.png" alt="" id="delete-item">
+          </button>
+        </li>
+
+        <li id="item">
+          <input type="checkbox" id="name-item">
+          <label for="name-item">Café</label>
+          <button>
+            <img src="assets/Frame.png" alt="" id="delete-item">
+          </button>
+        </li>
+
+        <li id="item">
+          <input type="checkbox" id="name-item">
+          <label for="name-item">Açucar</label>
+          <button>
+            <img src="assets/Frame.png" alt="" id="delete-item">
+          </button>
+        </li>
+        
+        <li id="item">
+          <input type="checkbox" id="name-item">
+          <label for="name-item">Ovos</label>
+          <button>
+            <img src="assets/Frame.png" alt="" id="delete-item">
+          </button>
+        </li>
+      </ul>
+    </form>
+
+    <footer id="item-removed">
+      <img src="assets/warning-circle.png" alt="">
+      <p>O item foi removido da lista</p>
+      <button id="close-alert">
+        <img src="assets/delete-x.png" alt="fechar alerta de remoção de item">
+      </button>
+    </footer>
+  </main>
   
 </body>
 </html>
