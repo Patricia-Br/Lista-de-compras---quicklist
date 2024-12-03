@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quicklist</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header id="logo-desktop">
+  <header>
     <img src="assets/logo.svg" alt="">
     <p>quicklist</p>
   </header>
@@ -21,49 +22,127 @@
     </div>
 
     <form>
-      <input type="text" placeholder="Adicione um novo item" id="add-item">
-      <button type="submit" class="button" id="btn">Adicionar item</button>
+      <div id="input-wrapper">
+        <input 
+          type="text" 
+          placeholder="Adicione um novo item" id="add-item">
+        <button type="submit" class="button" id="btn">Adicionar item</button>
+      </div>
 
       <ul>
         <li id="item">
-          <input type="checkbox" id="name-item">
-          <label for="name-item">Pão de forma</label>
-          <button>
-            <img src="assets/Frame.png" alt="" id="delete-item">
+          <div class="checkbox-image"></div>
+
+          <label for="name-item">
+            <input type="checkbox" id="name-item">
+            Pão de forma
+          </label>
+
+          <button id="delete-item">
+            <img src="assets/Frame.png" alt="">
           </button>
         </li>
 
         <li id="item">
-          <input type="checkbox" id="name-item">
-          <label for="name-item">Café</label>
-          <button>
-            <img src="assets/Frame.png" alt="" id="delete-item">
+          <div class="checkbox-image"></div>
+
+          <label for="name-item">
+            <input type="checkbox" id="name-item">
+            Pão de forma
+          </label>
+
+          <button id="delete-item">
+            <img src="assets/Frame.png" alt="">
           </button>
         </li>
 
         <li id="item">
-          <input type="checkbox" id="name-item">
-          <label for="name-item">Açucar</label>
-          <button>
-            <img src="assets/Frame.png" alt="" id="delete-item">
+          <div class="checkbox-image"></div>
+
+          <label for="name-item">
+            <input type="checkbox" id="name-item">
+            Pão de forma
+          </label>
+
+          <button id="delete-item">
+            <img src="assets/Frame.png" alt="">
           </button>
         </li>
-        
+
         <li id="item">
-          <input type="checkbox" id="name-item">
-          <label for="name-item">Ovos</label>
-          <button>
-            <img src="assets/Frame.png" alt="" id="delete-item">
+          <div class="checkbox-image"></div>
+
+          <label for="name-item">
+            <input type="checkbox" id="name-item">
+            Pão de forma
+          </label>
+
+          <button id="delete-item">
+            <img src="assets/Frame.png" alt="">
+          </button>
+        </li>
+
+        <li id="item">
+          <div class="checkbox-image"></div>
+
+          <label for="name-item">
+            <input type="checkbox" id="name-item">
+            Pão de forma
+          </label>
+
+          <button id="delete-item">
+            <img src="assets/Frame.png" alt="">
+          </button>
+        </li>
+
+        <li id="item">
+          <div class="checkbox-image"></div>
+
+          <label for="name-item">
+            <input type="checkbox" id="name-item">
+            Pão de forma
+          </label>
+
+          <button id="delete-item">
+            <img src="assets/Frame.png" alt="">
+          </button>
+        </li>
+
+        <li id="item">
+          <div class="checkbox-image"></div>
+
+          <label for="name-item">
+            <input type="checkbox" id="name-item">
+            Pão de forma
+          </label>
+
+          <button id="delete-item">
+            <img src="assets/Frame.png" alt="">
+          </button>
+        </li>
+
+        <li id="item">
+          <div class="checkbox-image"></div>
+
+          <label for="name-item">
+            <input type="checkbox" id="name-item">
+            Pão de forma
+          </label>
+
+          <button id="delete-item">
+            <img src="assets/Frame.png" alt="">
           </button>
         </li>
       </ul>
     </form>
 
-    <footer id="item-removed">
-      <img src="assets/warning-circle.png" alt="">
-      <p>O item foi removido da lista</p>
+    <footer>
+      <div>
+        <img src="assets/warning-circle.svg" alt="">
+        <p>O item foi removido da lista</p>
+      </div>
       <button id="close-alert">
-        <img src="assets/delete-x.png" alt="fechar alerta de remoção de item">
+        <img src="assets/delete-x.svg" alt="fechar alerta de remoção de item">
       </button>
     </footer>
   </main>
