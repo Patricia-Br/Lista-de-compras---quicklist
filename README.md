@@ -1,2 +1,2 @@
-Lista de compras - Quicklist 
-Projeto simples da Rocketseat para fixar conhecimento básico de Javascript
+## Lista de compras - Quicklist 
+#### Projeto simples apresentado pela Rocketseat para fixar conhecimento básico em Javascript
